@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus-quiz</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Meta Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '{pixel}');
+    fbq('track', 'PageView', {
+      eventID: '{subid}'
+    });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id={pixel}&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+  <script type="text/javascript">
+    //Add custom tag:
+    (window._rgba_tags = (window._rgba_tags || [])).push({
+      subid: "{subid}"
+    });
+  </script>
+  <script src="//b-js.ringba.com/{trac}" async></script>
+
+</head>
+
+<body>
+
+
+  <header class="header" id="header" style="background-image: url('images/hero-bg.png')">
+    <div class="header__container">
+      <h2 class="subtitle">
+        <span class="subtitle__red">Warning:</span> Enrollment closes on <span id="currentDate"></span> at midnight.
+      </h2>
+      <h1 class="title">
+        The <span class="title__red">average</span> insurance settlement for car accident injuries is <span
+          class="title__blue">$20,235.</span> Are you getting what you deserve?
+      </h1>
+      <div class="header__online">
+        <img class="header__img" src="images/animation_green_dot.gif" alt="avatar 1">
+        <p>
+          Sam is Online.
+        </p>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <div class="container">
+
+      <div class="" id="div1">
+        <div class="dialog">
+          <img class="agent__img" src="images/agentpic.jpg" alt="agent">
+          <div class="blockquote__inner">
+            <blockquote>
+              Hi there! My name is Sam, and I'm here to help you determine if you qualify to file a claim for
+              your traffic accident.</blockquote>
+            <blockquote class="dialog__item">
+              Were you recently injured in an auto accident?
+            </blockquote>
+            <blockquote id="btn0">
+              <button class="0">Yes</button>
+              <button class="1">No</button>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden" id="ans1">
+        <div class="answer">
+          <p class="answer__text">Yes</p>
+          <img class="user__img" src="images/userpic.png" alt="user">
+        </div>
+      </div>
+
+      <div class="hidden" id="ans2">
+        <div class="answer">
+          <p class="answer__text">No</p>
+          <img class="user__img" src="images/userpic.png" alt="user">
+        </div>
+      </div>
+
+      <div class="hidden" id="div2">
+        <div class="dialog">
+          <img class="agent__img" src="images/agentpic.jpg" alt="agent">
+          <div class="blockquote__inner">
+            <blockquote class="dialog__item">
+              I’m sorry to hear that.
+            </blockquote>
+            <blockquote class="dialog__item">
+              Did the accident happen less than 2 years ago?
+            </blockquote>
+            <blockquote id="btn1">
+              <button class="2">Yes</button>
+              <button class="3">No</button>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden" id="ans3">
+        <div class="answer">
+          <p class="answer__text">Yes</p>
+          <img class="user__img" src="images/userpic.png" alt="user">
+        </div>
+      </div>
+
+      <div class="hidden" id="ans4">
+        <div class="answer">
+          <p class="answer__text">No</p>
+          <img class="user__img" src="images/userpic.png" alt="user">
+        </div>
+      </div>
+
+      <div class="hidden" id="div3">
+        <div class="dialog">
+          <img class="agent__img" src="images/agentpic.jpg" alt="agent">
+          <div class="blockquote__inner">
+            <blockquote class="dialog__item">
+              Ok thank you for the information.
+            </blockquote>
+            <blockquote class="dialog__item">
+              Are you currently being represented by an attorney for this case?
+            </blockquote>
+            <blockquote id="btn2">
+              <button class="4">Yes</button>
+              <button class="5">No</button>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="hidden" id="ans5">
+        <div class="answer">
+          <p class="answer__text">Yes</p>
+          <img class="user__img" src="images/userpic.png" alt="user">
+        </div>
+      </div>
+
+      <div class="hidden" id="ans6">
+        <div class="answer">
+          <p class="answer__text">No</p>
+          <img class="user__img" src="images/userpic.png" alt="user">
+        </div>
+      </div>
+
+      <div class="hidden" id="div4">
+        <div class="dialog">
+          <img class="agent__img" src="images/agentpic.jpg" alt="agent">
+          <div class="blockquote__inner">
+            <blockquote class="dialog__item">
+              It looks like you could qualify for maximum compensation. Please call this number to find out how
+              much you qualify for now:
+            </blockquote>
+            <blockquote>
+              <button>
+                <a onclick="fbq('track', '{callbutton-fbevent}', {eventID: '{subid}'})" href="tel:+{phone}"
+                  class="btn-get-qualified phonecallclick">
+                  <i class="bi bi-telephone flex-shrink-0"></i> +{visiblephone}
+                </a>
+
+              </button>
+
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden" id="div5">
+        <div class="dialog">
+          <img class="agent__img" src="images/agentpic.jpg" alt="agent">
+          <div class="blockquote__inner">
+            <blockquote class="dialog__item">
+              I'm sorry but based on your responses, we cannot help you at this time. If you made a
+              mistake, please refresh this page and answer the questions again.
+
+              </p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer__container">
+      <div class="footer__copyright">
+        2024 All Rights Reserved
+      </div>
+      <p class="footer__text">
+        By submitting the above, I authorize an affiliated contractor to call me and send text messages to me about my
+        automotive accident claim application at the number entered above, using an autodialer, even if I'm on a
+        National or State "Do Not Call" list. You can opt-out anytime. Data and message rates may apply.
+      </p>
+      <div class="footer__legal">
+        <a href="#popup-t"> Terms Of Service |</a>&nbsp;
+        <a href="#popup-p">Privacy Policy</a>
+      </div>
+  </footer>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center">
+    <img class="footer__arrow" src="images/arrow-up.svg" alt="">
+  </a>
+
+  <div id="popup-t" class="popup popup__terms">
+    <a href="#footer" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__content">
+        
+        <a href="#footer" class="popup__close">X</a>
+        <h1 class="popup__title">Terms and Conditions</h1>
+        <div class="popup__text">
+          
+          <p>
+            Welcome to our landing page, which is designed to collect data on users. By accessing or using this
+            landing page, you
+            agree to be bound by the following terms and conditions:
+          </p>
+          <p>
+            User Data Collection: We collect user data, including but not limited to name, email address, phone
+            number, and other
+            information voluntarily provided by the user. This information will be used for our internal
+            purposes
+            and may be shared
+            with third-party service providers to facilitate our services.
+          </p>
+          <p>
+            Consent to Data Collection: By using our landing page and submitting your personal information, you
+            consent to the
+            collection, use, and sharing of your information as described in our Privacy Policy.
+          </p>
+          <p>
+            Accuracy of Information: You represent and warrant that all information provided by you is accurate,
+            complete, and up-to-date. You agree to update your information promptly if there are any changes.
+          </p>
+          <p>
+            User Conduct: You agree not to use this landing page for any unlawful purpose or in any way that may
+            harm,
+            disrupt, or
+            interfere with the functioning of the landing page. You further agree not to submit any content that
+            is
+            offensive,
+            defamatory, or otherwise inappropriate.
+          </p>
+          <p>
+            Intellectual Property: All content on this landing page, including but not limited to text,
+            graphics,
+            logos,
+            images, and
+            software, is the property of the landing page owner or its licensors and is protected by
+            intellectual
+            property laws.
+          </p>
+          <p>
+            Disclaimer of Warranties: We provide this landing page on an “as is” and “as available” basis. We
+            make
+            no
+            representations or warranties of any kind, express or implied, regarding the use or the results of
+            this
+            landing page in
+            terms of its correctness, accuracy, reliability, or otherwise.
+            Limitation of Liability: To the fullest extent permitted by law, we shall not be liable for any
+            direct,
+            indirect,
+            incidental, special, or consequential damages arising out of or in connection with the use or
+            inability
+            to
+            use this
+            landing page.
+          </p>
+          <p>
+            Indemnification: You agree to indemnify and hold harmless the landing page owner, its affiliates,
+            and
+            their
+            respective
+            officers, directors, employees, and agents from any and all claims, damages, expenses, and
+            liabilities
+            arising out of
+            your use of this landing page.
+          </p>
+          <p>
+            Modification: We reserve the right to modify or update these terms and conditions at any time
+            without
+            prior
+            notice. Your
+            continued use of this landing page constitutes your acceptance of any such changes.
+          </p>
+          <p>
+            Governing Law and Jurisdiction: These terms and conditions shall be governed by and construed in
+            accordance
+            with the
+            laws of [insert jurisdiction]. Any disputes arising out of or in connection with these terms and
+            conditions
+            shall be
+            submitted to the exclusive jurisdiction of the courts of The United States of America.
+            If you have any questions or concerns about these terms and conditions, please contact us.
+          </p>
+          
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div id="popup-p" class="popup popup__policy">
+    <a href="#footer" class="popup__area"></a>
+    <div class="popup__body">
+      <div class="popup__content">
+  
+        <a href="#footer" class="popup__close">X</a>
+        <h1 class="popup__title">Privacy Policy</h1>
+        <div class="popup__text">
+  
+          <p> This Privacy Policy describes how we collect, use, and share information about you when you use our
+            landing page. By using our landing page, you agree to the terms of this Privacy Policy. </p>
+          <h3>Information We Collect</h3>
+          <p> We may collect the following information about you: Personal Information: We may collect personal
+            information that you voluntarily provide to us, such as your name, email address, and phone
+            number.Usage
+            Information: We may collect information about your use of the landing page, such as your IP address,
+            browser type, and pages visited.Cookies: We may use cookies and similar technologies to collect
+            information about your use of the landing page and to personalize your experience. Cookies are small
+            text files that are placed on your device when you visit a website. </p>
+          <h3>How We Use Your Information</h3>
+          <p> We may use your information for the following purposes:To provide and improve our landing page: We
+            may
+            use your information to provide and improve our services and to personalize your experience.</p>
+          <h3> To communicate with you: </h3>
+          <p> We may use your information to communicate with you about our services and to respond to your
+            inquiries.To comply with legal obligations: We may use your information to comply with applicable
+            laws
+            and regulations. </p>
+          <h3>How We Share Your Information</h3>
+          <p> We may share your information with the following parties:Service Providers: We may share your
+            information with third-party service providers that assist us in providing our services.</p>
+          <h3>Business Transfers:</h3>
+          <p> We may share your information in connection with a merger, acquisition, or sale of all or a portion
+            of
+            our business. </p>
+          <h3> Legal Obligations: </h3>
+          <p> We may share your information to comply with applicable laws and regulations. Your ChoicesYou may
+            choose
+            to opt-out of receiving marketing communications from us by following the unsubscribe instructions
+            included in our emails. </p>
+          <h3>Cookies</h3>
+          <p> You can set your browser to refuse all or some browser cookies, or to alert you when cookies are
+            being
+            sent. However, if you disable or refuse cookies, some parts of the landing page may be inaccessible
+            or
+            not function properly. </p>
+          <h3>Data Security</h3>
+          <p> We take reasonable measures to protect your information from unauthorized access, use, and
+            disclosure.
+            However, no transmission of information over the internet is completely secure, and we cannot
+            guarantee
+            the security of your information. </p>
+          <h3>Changes to this Privacy Policy</h3>
+          <p> We may update this Privacy Policy from time to time. The updated Privacy Policy will be posted on
+            our
+            landing page with a new effective date. Your continued use of the landing page following any changes
+            to
+            this Privacy Policy constitutes your acceptance of such changes. </p>
+          <h3>Contact Us</h3>
+          <p>If you have any questions or concerns about this Privacy Policy or our practices, please contact us
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
